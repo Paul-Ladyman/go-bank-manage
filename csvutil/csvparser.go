@@ -5,7 +5,7 @@ import (
 )
 
 // CsvParser takes a multi-dimensional array of CSV data and return structs
-func CsvParser(csv [][]string) interface{} {
+func CsvParser(csv [][]string) domain.Transaction {
 	date := csv[1][0]
 	return domain.Transaction{Date: date}
 }
